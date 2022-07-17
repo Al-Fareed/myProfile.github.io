@@ -588,7 +588,8 @@ html, body {
  * Sections
  */
 .site-section {
-  padding: 100px 0;
+  padding: 50px 0;
+  background-color: #f0f0f1;
 }
 
 .site-section h2 {
@@ -1014,7 +1015,7 @@ html, body {
 
 .section-services .container-fluid {
   padding: 100px 15px 70px;
-  background-color: #ffffff;
+  background-color: #e7e7e7;
 }
 
 .section-services .container-fluid + .container {
@@ -1782,7 +1783,7 @@ html, body {
     content: none;
   }
   .timeline > li .timeline-rectangle {
-    disply: none;
+    display: none;
   }
 }
 
