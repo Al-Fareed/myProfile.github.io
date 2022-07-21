@@ -665,7 +665,7 @@ html, body {
   background-color: #666;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 330px) and (max-width: 991px) {
   /* Sections */
   .site-section {
     padding: 80px 0;
@@ -673,9 +673,7 @@ html, body {
 }
 @media only screen and (max-width: 779px) {
   .logo{
-    position: absolute  ;
-    margin-left: 15vw;
-    margin-top: -40px;
+    
   }
 }
 
