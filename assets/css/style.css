@@ -1,3 +1,11 @@
+/*
+ * Theme Name: Pixel Perfect Portfolio
+ * Author: Pixel Perfect
+ * Author URI/Mail: pixelperfectmk@gmail.com
+ * Version: 1.0
+ */
+
+
 /* CUSTOM RESETS
 ================================================== */
 a, button {
@@ -54,9 +62,8 @@ html, body {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
+  color: #050404;
   background-color: transparent;
-  border-color: #ffffff;
 }
 
 .btn-inverted:hover,
@@ -109,7 +116,7 @@ html, body {
   margin: 0 auto;
   width: 230px;
   height: 230px;
-  /* background-color: #196fc2; */
+  background-color: #196fc2;
   border: 0;
   transform: translate(-50%, -50%) rotate(45deg);
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -121,6 +128,7 @@ html, body {
   -moz-box-shadow: 10px 10px 0px 0px #dddddd;
   box-shadow: 10px 10px 0px 0px #dddddd;
 }
+
 .medium-rectangle {
   width: 75px;
   height: 75px;
@@ -416,6 +424,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero {
+  background: url(../img/hero.jpg) center no-repeat;
   height: 100%;
   width: 100%;
   display: table;
@@ -435,9 +444,9 @@ html, body {
 }
 
 .hero-content {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   display: table-cell;
-  vertical-align:middle;
+  vertical-align: middle;
   position: relative;
 }
 
@@ -454,7 +463,7 @@ html, body {
 .hero-content p {
   padding: 0 15px;
   margin: 30px auto 0;
-  text-align: center;
+  text-align: center;  
   text-transform: uppercase;
 }
 
@@ -588,8 +597,7 @@ html, body {
  * Sections
  */
 .site-section {
-  padding: 50px 0;
-  background-color: #f0f0f1;
+  padding: 100px 0;
 }
 
 .site-section h2 {
@@ -665,18 +673,10 @@ html, body {
   background-color: #666;
 }
 
-@media only screen and (min-width: 330px) and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   /* Sections */
   .site-section {
     padding: 80px 0;
-  }
-}
-@media only screen and (max-width: 779px) {
-  .logo{
-    position: absolute  ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -40px;
   }
 }
 
@@ -953,7 +953,7 @@ html, body {
 }
 
 .site-section.section-counters .rectangle {
-  margin: 20px auto 10px;
+  margin: 15px auto 10px;
 }
 
 .site-section.section-counters .rectangle i,
@@ -970,7 +970,7 @@ html, body {
 }
 
 .site-section.section-counters .row p {
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   text-transform: uppercase;
 }
 
@@ -984,13 +984,6 @@ html, body {
   }
 }
 
-@media only screen and (min-width: 771px) {
-  .container  .rowedu{
-    margin-left: 15%;
-    /* padding-left:10% ; */
-  }
-}
-
 @media only screen and (max-width: 479px) {
   /* Section: Counters */
   .section-counters .col-sm-2 {
@@ -998,13 +991,6 @@ html, body {
   }
   .section-counters .col-sm-2:nth-child(n+2) {
     margin-top: 20px;
-  }
- 
-}
-@media only screen and (max-width: 770px) {
-  .container  .counter{
-    /* margin-left: 10%; */
-    padding-left:10% ;
   }
 }
 
@@ -1016,7 +1002,7 @@ html, body {
 
 .section-services .container-fluid {
   padding: 100px 15px 70px;
-  background-color: #e7e7e7;
+  background-color: #ffffff;
 }
 
 .section-services .container-fluid + .container {
@@ -1143,7 +1129,7 @@ html, body {
 }
 
 .service-info p {
-  margin: 10px 0 0;
+  margin: 30px 0 0;
 }
 
 .nav-tabs .col-sm-fifth,
@@ -1784,7 +1770,7 @@ html, body {
     content: none;
   }
   .timeline > li .timeline-rectangle {
-    display: none;
+    disply: none;
   }
 }
 
@@ -2050,7 +2036,7 @@ html, body {
 
 /* Sections background: Quote */
 .section-quote {
-  background: url(../img/newProfile.jpg) center no-repeat ;
+  background: url(../img/quote.jpg) center no-repeat fixed;
 }
 
 .section-quote p {
@@ -2296,9 +2282,7 @@ textarea.form-control {
   color: #ffffff;
 }
 
-.site-footer .copyright {
-  margin-bottom: 0;
-}
+
 
 @media only screen and (max-width: 767px) {
   /* FOOTER*/
@@ -2403,4 +2387,21 @@ textarea.form-control {
     height: 36px;
     width: 36px;
   }
+}
+#black{
+  background-color: rgba(0, 0, 0, 0.281);
+  font-family: Raleway;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.TnQ{
+  text-transform: uppercase;
+  font-family: Raleway;
+
+}
+.site-footer .TnQ {
+  margin-bottom: 0;
 }
