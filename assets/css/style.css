@@ -65,8 +65,10 @@ body {
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  margin-top: 15px;
   overflow-x: hidden;
+}
+.card{
+  margin: 10px 5px 10px 5px  ;
 }
 .card > img {
   height: 240px;
@@ -464,7 +466,7 @@ body {
 
 .background-overlay:before {
   content: "";
-  background-color: rgba(65, 65, 65, 0.5);
+  /* background-color: rgba(65, 65, 65, 0.5); */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -2396,14 +2398,18 @@ textarea.form-control {
 .mainImage {
   margin-left: auto;
   margin-right: auto;
-
-  width: fit-content;
+  background-color: white;
+  border-radius: 50%;
+  padding: 3px;
+  width: max-content;
+  
 }
 .mainImage > img {
   border-radius: 50%;
+  
 }
 #black {
-  background-color: rgba(226, 226, 226, 0.281);
+  background-color: rgba(0, 0, 0, 0.804);
   font-family: Raleway;
   width: fit-content;
   border-radius: 5px;
@@ -2413,11 +2419,11 @@ textarea.form-control {
   margin-right: auto;
 }
 #typing-text {
-  background-color: rgba(226, 226, 226, 0.281);
-  font-family:Consolas;
+  background-color: rgba(0, 0, 0, 0.804);
+  font-family: 'Inconsolata', monospace;
   width: fit-content;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 5px;
   font-weight:200 ;
   margin-left: auto;
