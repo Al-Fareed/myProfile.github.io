@@ -871,8 +871,8 @@ html, body {
 }
 .badgeContainer{
   margin: 5px 0px 0px 15px;
-  width: 100%;
-
+  /* width: 100%; */
+  overflow: hidden;
 }
 .badge{
   background-color: rgb(252, 252, 252);
