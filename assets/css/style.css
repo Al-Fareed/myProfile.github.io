@@ -69,6 +69,7 @@ html, body {
 .card>img{
   height: 240px;
   margin-left: 10px;
+  margin-top: 5px;
   border-radius: 10px;
   box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
 }
@@ -873,6 +874,11 @@ html, body {
   margin: 5px 0px 0px 15px;
   /* width: 100%; */
   overflow: hidden;
+}
+.rowBadge{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .badge{
   background-color: rgb(252, 252, 252);
