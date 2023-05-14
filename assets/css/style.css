@@ -2413,15 +2413,15 @@ textarea.form-control {
 }
 #typing-text {
   background-color: rgba(226, 226, 226, 0.281);
-  font-family: Raleway;
+  font-family:Consolas;
   width: fit-content;
   border-radius: 5px;
-  font-size: 21px;
+  font-size: 25px;
   padding: 5px;
-  font-weight: bolder;
+  font-weight:200 ;
   margin-left: auto;
   margin-right: auto;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .TnQ {
   text-transform: uppercase;
