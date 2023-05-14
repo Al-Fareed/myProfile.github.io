@@ -64,7 +64,7 @@
                 </div>
                 <h1 id="black">Hey Folks, I am </h1>
                 <br>
-                <div  id = "myDiv" class="myIntro" >Al - Fareed</div>
+                <div  id="typing-text" class="myIntro" ></div>
             </div>
         </div><!-- /.hero-content -->
 
@@ -749,16 +749,37 @@
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
     <script>
-        function changeText(){
-            var textArray = ["Al - Fareed","MERN Developer"];
-            var currentText = document.getElementById("myDiv").innerHTML;
-            var currentIndex = textArray.indexOf(currentText);
+        var strings = ["Al-Fareed", "Web Developer"];
+var currentStringIndex = 0;
+var currentCharIndex = 0;
+var typingSpeed = 150; // Speed in milliseconds between each character
+var delayAfterString = 700; // Delay in milliseconds after completing one string
 
-      // Calculate the next index by incrementing the current index
-      var nextIndex = (currentIndex + 1) % textArray.length;
-      document.getElementById("myDiv").innerHTML = textArray[nextIndex];
-        }
-        setInterval(changeText, 3000);
+function type() {
+  var text = strings[currentStringIndex];
+  if (currentCharIndex < text.length) {
+    document.getElementById("typing-text").innerHTML += text.charAt(currentCharIndex);
+    currentCharIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    setTimeout(nextString, delayAfterString);
+  }
+}
+
+function nextString() {
+  // Move to the next string
+  currentStringIndex++;
+  if (currentStringIndex >= strings.length) {
+    currentStringIndex = 0; // Reset to the first string
+  }
+  currentCharIndex = 0; // Reset the character index
+  document.getElementById("typing-text").innerHTML = ""; // Clear the previous text
+  setTimeout(type, typingSpeed);
+}
+
+// Start the typing effect
+type();
+
     </script>
 </body>
 </html>
