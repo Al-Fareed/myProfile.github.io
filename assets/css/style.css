@@ -452,7 +452,7 @@ body {
 /* HERO
 ================================================== */
 .hero {
-  /* background: url(../img/hero.jpg) center no-repeat; */
+  background: url(../img/programmer.jpeg) center fixed no-repeat;
   background-color: #000;
   height: 100%;
   width: 100%;
