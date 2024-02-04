@@ -64,11 +64,15 @@
                 <div class="mainImage">
                     <img src="./assets/img/alfa-profile.png" height="250px"  alt="">
                 </div>
+                
                 <h1 id="black">Hey Folks, I am </h1>
                 <br>
                 <div  id="typing-text" class="myIntro" ></div>
             </div>
         </div><!-- /.hero-content -->
+        <div class="box1"></div>
+        <div class="box2"></div>
+        
 
         <div class="hero-arrow page-scroll home-arrow-down">
             <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
@@ -91,7 +95,7 @@
                     
                     <!-- Name -->
                     <div class="page-scroll site-logo">
-                        <a href="#top"><img src="assets/img/alfu.ico" style="width: 35px; height:35px;border-radius:50%" alt=""> ALFA</a>
+                        <a href="#top"><img src="assets/img/alfu.ico" style="width: 35px; height:35px;border-radius:50%" alt=""> AL-FAREED</a>
                     </div>
 
                 </div><!-- /.navbar-header -->
@@ -402,59 +406,7 @@
         </section><!-- /.section-skills -->
         <!-- End Skills section -->
 
-        <!-- Counters section -->
-         <section class="site-section section-about text-center" id="about">
-            <div class="container">
-                <h2>MY EDUCATION</h2>
-                <p class="section-subtitle"><span>Journey of my life</span></p>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa-solid fa-child"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>SSLC(10<sup>TH</sup>) <br> 2016</h3>
-                                <p>GOVT. JUNIOR COLLEGE<br> BAJEGOLI
-                            </p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                                        
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa-solid fa-trophy" ></i>
-                            </div><!-- /.rectangle -->
-                            <h3>II PUC(10+2) - PCMCs <br> 2018</h3>
-                            <p>SRI BHUVANENDRA COLLEGE <br> KARKALA</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-file" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>under graduation (bca) <br> 2021</h3>
-                            <p>
-                            <p>SRI BHUVANENDRA COLLEGE <br> KARKALA</p>
-
-                        </p>
-                        </div><!-- /.feature-about -->
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>POST GRADUATION (MCA) <br> 2023 </h3>
-                            <p>
-                                MANIPAL INSTITUTE OF TECHNOLOGY <br> MANIPAL
-                            </p>
-                        </div><!-- /.feature-about -->
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.section-about -->
-        <!-- End Counters section -->
+        
 
         <!-- Services section -->
         <section class="site-section section-services" id="services">
@@ -652,13 +604,7 @@
         </section><!-- /.section-services -->
         <!-- End Services section -->
 
-        
-
-
         <!-- History section --> 
-        
-
-       
 
         <!-- Me section --> 
         <section style="margin-top:40px ;" class="section-background section-me background-overlay text-center">
@@ -769,11 +715,11 @@
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
     <script>
-        var strings = ["Al-Fareed", "Web Developer..."];
+        var strings = ["Al-Fareed", "Web Developer","Automation Engineer"];
 var currentStringIndex = 0;
 var currentCharIndex = 0;
-var typingSpeed = 150; // Speed in milliseconds between each character
-var delayAfterString = 700; // Delay in milliseconds after completing one string
+var typingSpeed = 80;
+var delayAfterString = 700;
 
 function type() {
   var text = strings[currentStringIndex];
@@ -787,17 +733,15 @@ function type() {
 }
 
 function nextString() {
-  // Move to the next string
   currentStringIndex++;
   if (currentStringIndex >= strings.length) {
-    currentStringIndex = 0; // Reset to the first string
+    currentStringIndex = 0; 
   }
-  currentCharIndex = 0; // Reset the character index
-  document.getElementById("typing-text").innerHTML = ""; // Clear the previous text
+  currentCharIndex = 0; 
+  document.getElementById("typing-text").innerHTML = ""; 
   setTimeout(type, typingSpeed);
 }
 
-// Start the typing effect
 type();
 
     </script>

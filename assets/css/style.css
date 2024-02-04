@@ -34,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* 
@@ -455,15 +456,52 @@ body {
 /* HERO
 ================================================== */
 .hero {
-  background: url(../img/programmer.jpeg) center fixed no-repeat;
-  background-color: #000;
+  /* background: url(../img/programmer.jpeg) center fixed no-repeat; */
+  background:linear-gradient(#141e30 , #243b55);
   height: 100%;
   width: 100%;
+  z-index: 0;
   display: table;
   position: relative;
   background-size: cover;
 }
-
+.box1{
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  background-color: #243b55;
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  animation: slide-box1 0.3s ease-in-out ;
+  top: -4rem;
+  right: -8rem;
+  transform: rotate(50deg);
+  border-radius: 10px;
+  overflow-y:hidden;
+  box-shadow:inset 0px 2px 10px 7px #4a6991;
+}
+@keyframes slide-box1 {
+  0%{transform:translate(100%, -100%)rotate(50deg)}
+  100%{transform:translate(0%,0%)rotate(50deg)}
+}
+.box2{
+  background-color: #243b55;
+  position: absolute;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  animation: slide-box2 0.3s ease-in-out ;
+  bottom: -4rem;
+  left: -8rem;
+  transform: rotate(50deg);
+  border-radius: 10px;
+  overflow-y:hidden;
+  box-shadow:inset 0px 2px 10px 7px #4a6991;
+}
+@keyframes slide-box2 {
+  0%{transform:translate(-100%, 100%)rotate(50deg)}
+  100%{transform:translate(0%, 0%)rotate(50deg)}
+}
 .background-overlay:before {
   content: "";
   /* background-color: rgba(65, 65, 65, 0.5); */
@@ -2402,8 +2440,21 @@ textarea.form-control {
   border-radius: 50%;
   padding: 3px;
   width: max-content;
-  
+  animation: 1s ease;
+  animation-name: profile;
+  animation-duration: 0.5s;
+  position: relative;
 }
+@keyframes profile{
+  0% {
+    transform: translate(0%, 1500%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+
 .mainImage > img {
   border-radius: 50%;
   
